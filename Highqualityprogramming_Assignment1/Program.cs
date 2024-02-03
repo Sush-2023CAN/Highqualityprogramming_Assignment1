@@ -24,6 +24,52 @@ int Hunger = 5;
 int Happiness = 5;
 int Health = 5;
 
-Console.WriteLine("Main Menu:\n 1.Feed " + petname + "\n 2.Play with " + petname + "\n 3.Let " + petname + " Rest \n 4.Check " + petname + "'s Status \n 5.Exit");
-userinput = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("User selected: " + userinput);
+do
+{
+    Console.WriteLine("Main Menu:\n 1.Feed " + petname + "\n 2.Play with " + petname + "\n 3.Let " + petname + " Rest \n 4.Check " + petname + "'s Status \n 5.Exit");
+    userinput = Convert.ToInt32(Console.ReadLine());   //  Reading the user input
+    Console.WriteLine("User selected: " + userinput); // Printing the user input data
+
+    // Feeding your pet
+    if (userinput == 1)
+    {
+        Hunger = Hunger - 1;
+        Happiness = Happiness + 1;
+        Health = Health + 1;
+        Console.WriteLine("You fed " + petname + ". His hunger reduces slightly, happiness and health increases gradually");
+    }
+
+    //Playing with your pet
+    else if (userinput == 2)
+    {
+        Hunger = Hunger + 1;
+        Happiness = Happiness + 1;
+        Health = Health - 1;
+        Console.WriteLine("You played with " + petname + ".His Health Reduces slightly,  happiness and hunger increases rapidly");
+    }
+
+    //Letting your pet rest
+    else if (userinput == 3)
+    {
+        Hunger = Hunger + 1;
+        Happiness = Happiness - 1;
+        Health = Health + 1;
+        Console.WriteLine("You let " + petname + " to  rest. His happiness reduces slightly, his hunger and health increases a bit");
+    }
+
+    //Checking your pet's status
+    else if (userinput == 4)
+    {
+        Console.WriteLine(petname + "'s Status: ");
+        Console.WriteLine("Hunger :" + Hunger);
+        Console.WriteLine("Happiness:" + Happiness);
+        Console.WriteLine("Health:" + Health);
+    }
+
+    // Exiting option
+    else if (userinput == 5)
+    {
+        Console.WriteLine("You can come again later " + petname + " . Thanks!");
+    }
+}
+while (userinput != 5); // exit condition
