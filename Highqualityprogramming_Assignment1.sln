@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Highqualityprogramming_Assignment1", "Highqualityprogramming_Assignment1\Highqualityprogramming_Assignment1.csproj", "{BE2A8B59-3A1B-417B-BF1C-3533262D41C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highqualityprogramming_Assignment1", "Highqualityprogramming_Assignment1\Highqualityprogramming_Assignment1.csproj", "{BE2A8B59-3A1B-417B-BF1C-3533262D41C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment1Updated", "..\Assignment1Updated\Assignment1Updated\Assignment1Updated.csproj", "{A05F4F34-EC36-4259-80F7-9453938991BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE2A8B59-3A1B-417B-BF1C-3533262D41C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE2A8B59-3A1B-417B-BF1C-3533262D41C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE2A8B59-3A1B-417B-BF1C-3533262D41C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A05F4F34-EC36-4259-80F7-9453938991BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05F4F34-EC36-4259-80F7-9453938991BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05F4F34-EC36-4259-80F7-9453938991BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05F4F34-EC36-4259-80F7-9453938991BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
