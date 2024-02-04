@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Choose one of the pet below:\n 1. Dog \n 2. Cat \n 3. Chipmunk");
+﻿
+
+Console.WriteLine("Choose one of the pet below:\n 1. Dog \n 2. Cat \n 3. Chipmunk");
 int userinput = Convert.ToInt32(Console.ReadLine());//Read User Input from console
 Console.WriteLine("User selected: " + userinput);
 if (userinput == 1)
@@ -26,6 +28,42 @@ int Health = 5;
 
 do
 {
+    if (Hunger < 1 || Hunger > 10)
+    {
+        if (Hunger < 1)
+        {
+            Hunger = 1;
+        }
+        else
+        {
+            Hunger = 10;
+        }
+    }
+
+    if (Happiness < 1 || Happiness > 10)
+    {
+        if (Happiness < 1)
+        {
+            Happiness = 1;
+        }
+        else
+        {
+            Happiness = 10;
+        }
+    }
+
+    if (Health < 1 || Health > 10)
+    {
+        if (Health < 1)
+        {
+            Health = 1;
+        }
+        else
+        {
+            Health = 10;
+        }
+    }
+
     Console.WriteLine("Main Menu:\n 1.Feed " + petname + "\n 2.Play with " + petname + "\n 3.Let " + petname + " Rest \n 4.Check " + petname + "'s Status \n 5.Exit");
     userinput = Convert.ToInt32(Console.ReadLine());   //  Reading the user input
     Console.WriteLine("User selected: " + userinput); // Printing the user input data
