@@ -71,5 +71,51 @@ do
     {
         Console.WriteLine("You can come again later " + petname + " . Thanks!");
     }
+
+    if (Hunger == 1)
+    {
+        Console.WriteLine("I WILL NOT EAT anymore food. I wanna play or just allow me to take rest!");
+    }
+    if (Hunger == 3 || Hunger == 2)
+    {
+        Console.WriteLine("Dont feed your pet " + petname + " He is full. Play with your pet or make him take rest!");
+    }
+    else if (Hunger > 8)
+    {
+        Console.WriteLine("Your pet " + petname + " is very Hungry. Feed Him!!!");
+    }
+
+
+
+
+    //Extreme Conditions for Happiness
+    if (Happiness == 3 || Happiness == 2)
+    {
+        Console.WriteLine("Your pet " + petname + " is not happy. Play with him or Feed him!");
+    }
+    if (Happiness == 1)
+    {
+        Console.WriteLine("I don't wanna take rest anymore. I wanna play or just feed me!");
+    }
+    else if (Happiness > 8)
+    {
+        Console.WriteLine("Your pet " + petname + " is extremely happy. Let him rest for some time.");
+    }
+
+
+    //Extreme Conditions for Health
+    if (Health == 2 || Health == 2)
+    {
+        Console.WriteLine("Your pet " + petname + " is not healthy. Feed him or make him rest!");
+    }
+    if (Health == 1)
+    {
+        Console.WriteLine("I WILL NOT PLAY anymore. I want to take rest or just feed me.");
+    }
+    else if (Health > 8)
+    {
+        Console.WriteLine("Your pet " + petname + "is extremely healthy. Play with him!");
+    }
+
 }
 while (userinput != 5); // exit condition
